@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 10%;
+}
+
+.header {
+    background-color: blue;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    max-width: 300px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.footer {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+    gap: 20px;
+    color: white;
+}
+
+
+.footer-links {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 20px;
+}
+
+.footer-link:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .footer-link:visited {
+    color: lightgray;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: lightgray;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .footer-link:active {
+    color: lightblue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  button:hover {
+    background-color: lightblue;
+  }
+
+  .btn {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .btn:hover {
+    background-color: lightblue;
+  }
+
+  .payment-form {
+    margin-top: 100px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .input-field {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .pay-btn {
+    background-color: blue; 
+    color: white;
+  }
+
+  .pay-btn:hover {
+    background-color: darkblue;
+  }
+
+  .header-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header-link:hover
+  {
+    color: lightgray;
+  }

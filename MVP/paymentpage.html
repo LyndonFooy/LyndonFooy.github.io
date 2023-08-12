@@ -9,13 +9,22 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">Your Logo</div>
+            <div class="logo">eKiosk</div>
             <div class="nav-links">
                 <a class="header-link" href="mainpage.html">Home</a>
             </div>
         </div>
 
-        <div class="payment-form">
+        <div class="payment-form" id="MyCiti_Details">
+            <h2>MyCiti Details</h2>
+            <div class="input-group">
+                <label class="input-label" for="myciti-card-number">MyCiti Card Number:</label>
+                <input type="text" id="card-number" class="input-field" placeholder="1234 5678 9012 3456">
+            </div>
+            <button class="button pay-btn" onclick="nextForm()">Next</button>
+        </div>
+
+        <div class="payment-form" id="Payment_Information" style="display: none;">
             <h2>Payment Information</h2>
             <div class="input-group">
                 <label class="input-label" for="card-number">Card Number:</label>
@@ -33,15 +42,33 @@
                 <label class="input-label" for="name">Cardholder Name:</label>
                 <input type="text" id="name" class="input-field" placeholder="John Doe">
             </div>
+            <button class="button pay-btn" onclick="back()">Back</button>
             <button class="button pay-btn">Make Payment</button>
         </div>
 
         <div class="footer">
             <div class="footer-links">
-                <a class="footer-link" href="#">Contact Us</a>
-                <a class="footer-link" href="#">About Us</a>
+                <a class="footer-link" href="../InformationPages/contactus.html">Contact Us</a>
+                <a class="footer-link" href="../InformationPages/aboutus.html">About Us</a>
             </div>
         </div>
     </div>
 </body>
+
+<script src="../JavaScript/jquery-1.7.1.js"></script>
+
+<script>
+    function nextForm()
+    {
+        document.getElementById('MyCiti_Details').style.display = "none"
+        document.getElementById('Payment_Information').style.display = "revert"
+    }
+
+    function back()
+    {
+        document.getElementById('MyCiti_Details').style.display = "revert"
+        document.getElementById('Payment_Information').style.display = "none"
+    }
+</script>
+
 </html>

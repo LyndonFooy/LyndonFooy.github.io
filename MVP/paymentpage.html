@@ -9,17 +9,27 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">eKiosk</div>
-            <div class="nav-links">
-                <a class="header-link" href="mainpage.html">Home</a>
-            </div>
+            <table class="header-table">
+                <tr>
+                    <td>
+                        <img class="logo-image"  src="../Styling/Assets/eKiosk logo.png">
+                    </td>
+                    <td class="header-table-cell">
+                        <a class="header-link" href="mainpage.html">Home</a>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <div class="payment-form" id="MyCiti_Details">
             <h2>MyCiti Details</h2>
             <div class="input-group">
                 <label class="input-label" for="myciti-card-number">MyCiti Card Number:</label>
-                <input type="text" id="card-number" class="input-field" placeholder="1234 5678 9012 3456">
+                <input type="text" id="myciti-card-number" class="input-field" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="myciti-card-cvv">CVV:</label>
+                <input type="text" id="myciti-cvv" class="input-field" placeholder="123">
             </div>
             <button class="button pay-btn" onclick="nextForm()">Next</button>
         </div>
@@ -47,10 +57,6 @@
         </div>
 
         <div class="footer">
-            <div class="footer-links">
-                <a class="footer-link" href="../InformationPages/contactus.html">Contact Us</a>
-                <a class="footer-link" href="../InformationPages/aboutus.html">About Us</a>
-            </div>
         </div>
     </div>
 </body>

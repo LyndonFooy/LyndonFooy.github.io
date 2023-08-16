@@ -37,8 +37,8 @@
     }
 
     .header {
-        background-color: blue;
-        color: white;
+        background-color: white;
+        color: red;
         position: fixed;
         top: 0;
         left: 0;
@@ -53,6 +53,10 @@
     .logo {
         font-size: 2.5em;
         font-weight: bold;
+    }
+
+    .logo-image {
+      width: 6em;
     }
     
     .buttons {
@@ -72,9 +76,12 @@
         width: 100%;
         box-sizing: border-box;
         border-radius: 12px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
     }
 
-    button:hover {
+    .button:hover {
       background-color: lightblue;
     }
 
@@ -85,8 +92,8 @@
     }
     
     .footer {
-        background-color: red;
-        color: white;
+        background-color: white;
+        color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -152,11 +159,12 @@
     
       .payment-form {
         margin-top: 100px;
-        background-color: lightgray;
+        background-color: lightblue;
         padding: 20px;
         border-radius: 10px;
         align-items: center;
         text-align: center;
+        color: gray;
       }
     
       .input-group {
@@ -177,22 +185,40 @@
       }
     
       .pay-btn {
-        background-color: blue; 
+        background-color: red; 
         color: white;
       }
     
       .pay-btn:hover {
-        background-color: darkblue;
+        background-color: lightcoral;
       }
     
       .header-link {
-        color: white;
+        color: red;
+        font-weight: bold;
         text-decoration: none;
+        background-color: white;
+        border: 2px solid red;
+        border-radius: 30px;
+        padding: 0.5em;
+        margin: 1em;
       }
     
       .header-link:hover
       {
-        color: lightgray;
+        color: lightcoral;
+        border: 3px solid lightcoral;
+        border-radius: 30px;
+      }
+
+      .header-table
+      {
+        width: 100%;
+      }
+
+      .header-table-cell
+      {
+        text-align: right;
       }
     
   }

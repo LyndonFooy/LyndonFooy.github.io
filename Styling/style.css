@@ -64,6 +64,7 @@
         flex-direction: column;
         align-items: center;
         margin: inherit;
+        text-align: center;
     }
     
     .button {
@@ -196,13 +197,11 @@
     
       .header-link {
         color: red;
-        font-weight: bold;
         text-decoration: none;
         background-color: white;
         border: 2px solid red;
         border-radius: 30px;
         padding: 0.5em;
-        margin: 1em;
       }
     
       .header-link:hover
@@ -222,4 +221,13 @@
         text-align: right;
       }
     
+      .border-element-right
+      {
+        margin-right: 2em;
+      }
+
+      p 
+      {
+        text-align: center;
+      }
   }
